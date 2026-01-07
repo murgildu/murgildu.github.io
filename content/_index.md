@@ -37,6 +37,11 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
+        link:
+          icon: book-open
+          icon_pack: fas
+          text: Check our tutorials
+          url: https://dif3dgela.github.io/docusaurus/
       - title: Stay Connected
         content: |
           We’re just getting started! This site will grow with resources, guides, and showcases of student work.<br>
