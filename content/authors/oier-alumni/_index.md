@@ -44,6 +44,6 @@ user_groups:
   - Alumni
 ---
 
-**Final Degree Project** [link](https://dif3dgela.github.io/projects/25-02-01-oier/)
+**Final Degree Project** [link](https://murgildu.github.io/projects/25-02-01-oier/)
 
 **Topic:** *Game Intelligence*. 

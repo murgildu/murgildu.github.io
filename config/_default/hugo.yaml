@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Dif 3D Gela # Website name
-baseURL: 'https://dif3dgela.github.io/' # Website URL
+title: MURGILDU # Website name
+baseURL: 'https://murgildu.github.io/' # Website URL
 
 ############################
 ## LANGUAGE

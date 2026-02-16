@@ -22,7 +22,7 @@ sections:
           icon: diagram-project
           icon_pack: fas
           text: Check our projects
-          url: https://github.com/orgs/dif3dgela/repositories
+          url: https://github.com/orgs/murgildu/repositories
       - title: What We Do ☕️
         content: |
           <b>3D Modeling & Animation</b> – Blender, sketchfab, other open-source tools, and artistic workflows <br>
@@ -41,7 +41,7 @@ sections:
           icon: book-open
           icon_pack: fas
           text: Check our tutorials
-          url: https://dif3dgela.github.io/docusaurus/
+          url: https://murgildu.github.io/docusaurus/
       - title: Stay Connected
         content: |
           We’re just getting started! This site will grow with resources, guides, and showcases of student work.<br>

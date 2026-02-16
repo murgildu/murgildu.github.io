@@ -44,7 +44,7 @@ highlight_name: false
 user_groups:
   - Alumni
 ---
-**Final Degree Project** [link](https://dif3dgela.github.io/projects/25-09-01-iraida/)
+**Final Degree Project** [link](https://murgildu.github.io/projects/25-09-01-iraida/)
 
 **Topic:** VR for education. 
 

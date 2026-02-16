@@ -43,7 +43,7 @@ highlight_name: false
 user_groups:
   - Alumni
 ---
-**Final Degree Project** [link](https://dif3dgela.github.io/projects/25-09-21-lorena/)
+**Final Degree Project** [link](https://murgildu.github.io/projects/25-09-21-lorena/)
 
 **Topic:** *3D Impression* for educational purposes . 
 
