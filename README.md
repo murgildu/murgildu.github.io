@@ -1,4 +1,4 @@
-# 🎨 [EHU 3D Graphics Lab](https://github.com/dif3dgela/dif3dgela.github.io) (dif.3d.gela)
+# 🎨 [EHU 3D Graphics Lab](https://github.com/murgildu/murgildu.github.io) (murgildu)
 
 [![Screenshot](assets/media/icon.png)](https://dif3dgela.github.io/)
 
