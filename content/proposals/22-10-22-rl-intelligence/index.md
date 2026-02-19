@@ -1,6 +1,6 @@
 ---
 title: Godot RL exploration projects 🎮
-date: 2025-10-22 🤖
+date: 2025-10-22
 image:
   focal_point: 'top'
 ---

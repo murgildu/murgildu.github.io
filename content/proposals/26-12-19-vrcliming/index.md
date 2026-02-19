@@ -1,6 +1,6 @@
 ---
 title: Inmersive game development for students 🎮
-date: 2025-10-22 🤖
+date: 2026-02-19
 image:
   focal_point: 'top'
 ---

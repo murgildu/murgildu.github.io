@@ -1,5 +1,5 @@
 ---
-title: VR for different scenarios and haptics🎮
+title: VR for different scenarios and haptics 🎮
 date: 2025-10-22
 image:
   focal_point: 'top'
