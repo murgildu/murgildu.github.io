@@ -1,16 +1,15 @@
 ---
-title: Game Development🎮
-date: 2025-10-22
+title: Godot RL exploration projects 🎮
+date: 2025-10-22 🤖
 image:
   focal_point: 'top'
 ---
-2D, 3D and XR game development proposals for practice and TFG / TFMs
+## Godot RL exploration projects
 
- <!--more-->
-**Project 1:** Lidar datuen modelatzea
-PDAL + Blender integratzea, lur eredu errealistak sortzeko, higadura edo landaredia simulatuz.
-![PDAL](PDAL.png)
+Exploring **Godot RL Agents** and other RL frameworks to control agents in 2D/3D environments created with Godot, focusing on training policies for navigation, combat, or collaborative behaviors.
+<!-- more -->
+- **Project: Godot RL Exploration**
+  - Student: Ariana Isabel Yong  
+  - Description: Design several Godot environments (2D and 3D) connected to an RL backend, compare algorithms (e.g. PPO, DQN) and analyze sample efficiency and generalization.
 
-**Project 2:** 3D Irudi Medikoak: Datu Mediko Multimodalen Bistaratzea
-Garunaren berreraikuntza anatomikoa Blender-en.
-![brain](brain.jpg)
+---
