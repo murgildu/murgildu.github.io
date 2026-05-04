@@ -3,6 +3,18 @@
   font-size: 1.2rem;
 }
 
+.navbar-brand {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.navbar-brand-logo {
+  height: 2rem;
+  object-fit: contain;
+  width: auto;
+}
+
 .wg-slider .slider-foreground-shell {
   align-items: center !important;
   overflow-y: auto;
