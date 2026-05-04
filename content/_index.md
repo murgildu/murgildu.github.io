@@ -9,6 +9,9 @@ sections:
     content:
       slides:
       - title: Godot VR & AR Workshop
+        image:
+          filename: godot-vr-ar-workshop.jpg
+          alt: Godot VR and AR Workshop
         content: |
           Join us for a two-session workshop with <b>Bastiaan Olij</b>, Lead XR Developer of <b>Godot Engine</b>, Godot Foundation board member, and contributor to the OpenXR Working Group.<br><br>
           <b>Session 1:</b> Wednesday 6 May, 09:00–11:00 · Introduction to Godot, XR and VR<br>
@@ -19,11 +22,6 @@ sections:
           <a class="btn btn-outline-light btn-lg m-1" href="https://docs.google.com/presentation/d/15NEqwhqVFMUNl5RsjStFp6kUbikYUdA2wMFCvDFjXgg" target="_blank" rel="noopener">Support slides</a>
         align: center
         background:
-          image:
-            filename: godot-vr-ar-workshop.jpg
-            filters:
-              brightness: 0.45
-          position: center
           color: '#222'
       - title: 👋 Welcome to the 3D Graphics Laboratory at the University of the Basque Country (EHU)
         content: 'A creative playground where students can explore, experiment, and build with 3D technologies.'

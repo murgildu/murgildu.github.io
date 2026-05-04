@@ -2,3 +2,66 @@
   max-width: 100%;
   font-size: 1.2rem;
 }
+
+.wg-slider .slider-foreground-shell {
+  align-items: center !important;
+  overflow-y: auto;
+  padding: 5.25rem 1rem 3.5rem;
+}
+
+.wg-slider .slider-foreground-layout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1100px;
+}
+
+.wg-slider .slider-foreground-image {
+  border-radius: 8px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
+  display: block;
+  height: auto;
+  max-height: 42vh;
+  max-width: 980px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.wg-slider .slider-foreground-layout .hero-title {
+  margin: 0;
+}
+
+.wg-slider .slider-foreground-layout .hero-lead {
+  max-width: 980px;
+}
+
+.wg-slider .carousel-control-prev,
+.wg-slider .carousel-control-next {
+  z-index: 20;
+}
+
+@media (max-width: 767.98px) {
+  .wg-slider .slider-foreground-shell {
+    padding: 4.5rem 0.75rem 3rem;
+  }
+
+  .wg-slider .slider-foreground-layout {
+    gap: 0.75rem;
+  }
+
+  .wg-slider .slider-foreground-image {
+    max-height: 30vh;
+  }
+
+  .wg-slider .slider-foreground-layout .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .wg-slider .slider-foreground-layout .hero-lead {
+    font-size: 1rem;
+  }
+}
