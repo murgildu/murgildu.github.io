@@ -18,14 +18,14 @@
 .wg-slider .slider-foreground-shell {
   align-items: center !important;
   overflow-y: auto;
-  padding: 5.25rem 1rem 3.5rem;
+  padding: 4.75rem 1rem 2.75rem;
 }
 
 .wg-slider .slider-foreground-layout {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
   justify-content: center;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -37,18 +37,26 @@
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
   display: block;
   height: auto;
-  max-height: 42vh;
+  max-height: 40vh;
   max-width: 980px;
   object-fit: contain;
   width: 100%;
 }
 
 .wg-slider .slider-foreground-layout .hero-title {
+  font-size: 2.15rem;
   margin: 0;
 }
 
 .wg-slider .slider-foreground-layout .hero-lead {
+  font-size: 1.05rem;
+  line-height: 1.35;
   max-width: 980px;
+}
+
+.wg-slider .slider-foreground-layout .btn-lg {
+  font-size: 1rem;
+  padding: 0.45rem 1rem;
 }
 
 .wg-slider .carousel-control-prev,
@@ -58,7 +66,7 @@
 
 @media (max-width: 767.98px) {
   .wg-slider .slider-foreground-shell {
-    padding: 4.5rem 0.75rem 3rem;
+    padding: 4rem 0.75rem 2.5rem;
   }
 
   .wg-slider .slider-foreground-layout {
@@ -66,14 +74,20 @@
   }
 
   .wg-slider .slider-foreground-image {
-    max-height: 30vh;
+    max-height: 28vh;
   }
 
   .wg-slider .slider-foreground-layout .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.55rem;
   }
 
   .wg-slider .slider-foreground-layout .hero-lead {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .wg-slider .slider-foreground-layout .btn-lg {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 }
