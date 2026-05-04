@@ -17,9 +17,9 @@ sections:
           <b>Session 1:</b> Wednesday 6 May, 09:00–11:00 · Introduction to Godot, XR and VR<br>
           <b>Session 2:</b> Thursday 7 May, 09:00–11:00 · AR in Godot<br>
           <b>Location:</b> MURGILDU 3D lab. Lab E08 - Also available online<br><br>
-          <a class="btn btn-primary btn-lg m-1" href="https://youtube.com/live/RiXEcvSVeyI?feature=share" target="_blank" rel="noopener">Session 1 stream</a>
-          <a class="btn btn-primary btn-lg m-1" href="https://youtube.com/live/Abb5pyP1r3w?feature=share" target="_blank" rel="noopener">Session 2 stream</a>
-          <a class="btn btn-outline-light btn-lg m-1" href="https://docs.google.com/presentation/d/15NEqwhqVFMUNl5RsjStFp6kUbikYUdA2wMFCvDFjXgg" target="_blank" rel="noopener">Support slides</a>
+          <a class="btn btn-light btn-lg m-1" href="https://youtube.com/live/RiXEcvSVeyI?feature=share" target="_blank" rel="noopener">Session 1 stream</a>
+          <a class="btn btn-light btn-lg m-1" href="https://youtube.com/live/Abb5pyP1r3w?feature=share" target="_blank" rel="noopener">Session 2 stream</a>
+          <a class="btn btn-light btn-lg m-1" href="https://docs.google.com/presentation/d/15NEqwhqVFMUNl5RsjStFp6kUbikYUdA2wMFCvDFjXgg" target="_blank" rel="noopener">Support slides</a>
         align: center
         background:
           color: '#222'
