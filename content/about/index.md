@@ -3,6 +3,7 @@
 title: About EHU 3D Graphics Lab
 # Page type - we want a landing page (such as a homepage)
 type: landing
+summary: Learn about MURGILDU, the 3D graphics laboratory at the University of the Basque Country (EHU), and its work in 3D technologies, XR, VR, AR, game engines, and fabrication.
 
 # Your landing page sections - add as many different content blocks as you like
 sections:

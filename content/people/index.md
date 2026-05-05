@@ -3,6 +3,7 @@ title: People
 date: 2022-10-24
 
 type: landing
+summary: Meet the MURGILDU 3D Laboratory team at the University of the Basque Country (EHU).
 
 sections:
   - block: people

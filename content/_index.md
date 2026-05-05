@@ -3,6 +3,9 @@
 title:
 date: 2022-10-24
 type: landing
+summary: MURGILDU 3D Laboratory is the 3D graphics laboratory at the University of the Basque Country (EHU), focused on 3D graphics, XR, VR, AR, game engines, 3D printing, and digital fabrication.
+seo:
+  title: MURGILDU 3D Graphics Laboratory at EHU
 
 sections:
   - block: slider

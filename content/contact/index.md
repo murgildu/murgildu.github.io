@@ -3,6 +3,7 @@ title: Contact
 date: 2025-10-22
 
 type: landing
+summary: Contact MURGILDU 3D Laboratory at the University of the Basque Country (EHU).
 
 sections:
   - block: Contact

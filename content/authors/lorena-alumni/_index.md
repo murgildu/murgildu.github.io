@@ -6,7 +6,7 @@ title: Lorena Bocos
 first_name: Lorena 
 last_name: Bocos
 authors:
-  - default-master-student
+  - lorena-alumni
 
 # Is this the primary user of the site?
 superuser: false
@@ -46,4 +46,3 @@ user_groups:
 **Final Degree Project** [link](https://murgildu.github.io/projects/25-09-21-lorena/)
 
 **Topic:** *3D Impression* for educational purposes . 
-

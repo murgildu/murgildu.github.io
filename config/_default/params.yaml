@@ -17,11 +17,11 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: ''
-    org_name: ''
-    description: 'MURGILDU 3D Lab. University of the Basque Country (EHU).'
-    twitter: 'GetResearchDev'
+    org_name: 'MURGILDU'
+    description: 'MURGILDU 3D Laboratory, the 3D graphics laboratory at the University of the Basque Country (EHU) for 3D graphics, XR, VR, AR, game engines, 3D printing, and digital fabrication.'
+    twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-8FWX909VW9'
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
@@ -72,7 +72,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/murgildu/murgildu.github.io'
     content_dir: content
     branch: main
   avatar:

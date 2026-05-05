@@ -2,6 +2,7 @@
 title: Latest
 date: 2022-10-24
 type: landing
+summary: Latest projects and proposals from MURGILDU 3D Laboratory, the 3D graphics laboratory at the University of the Basque Country (EHU).
 
 sections:
   - block: hero
