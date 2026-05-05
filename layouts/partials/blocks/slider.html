@@ -63,7 +63,9 @@
       {{/* To prevent control overlap, margins are based on $carousel-control-* in bootstrap-variables.scss */}}
       <div class="wg-hero dark container{{with $foreground_img}} slider-foreground-layout{{end}}" style="margin-left: 6rem; margin-right: 6rem; text-align: {{$item.align | default "left"}};">
           {{ with $foreground_img }}
-          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="slider-foreground-image" alt="{{ $item.image.alt | default $item.title | plainify }}">
+          <div class="slider-foreground-image-frame">
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="slider-foreground-image" alt="{{ $item.image.alt | default $item.title | plainify }}">
+          </div>
           {{ end }}
 
           <h1 class="hero-title ">
