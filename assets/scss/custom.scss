@@ -100,7 +100,7 @@
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
   display: flex;
   flex: 0 0 auto;
-  height: clamp(180px, 38svh, 400px);
+  height: clamp(220px, 48svh, 520px);
   justify-content: center;
   max-width: 100%;
   padding: clamp(0.25rem, 0.8vw, 0.75rem);
@@ -150,7 +150,8 @@
   }
 
   .wg-slider .slider-foreground-image-frame {
-    height: clamp(160px, 30svh, 260px);
+    aspect-ratio: 4 / 3;
+    height: auto;
     max-width: 100%;
   }
 
