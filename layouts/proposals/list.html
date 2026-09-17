@@ -1,0 +1,98 @@
+{{ define "main" }}
+<main class="proposal-page container">
+  <header class="proposal-intro">
+    <div>
+      <p class="proposal-eyebrow">Project ideas · 2026–2027</p>
+      <h1>Find your next<br>TFG or TFM.</h1>
+      <p class="proposal-lead">Create immersive experiences, bring medical data into 3D, or explore smarter ways to use space. Find a starting point that fits your interests.</p>
+      <a class="proposal-primary-link" href="#project-ideas">Explore the ideas <span aria-hidden="true">↓</span></a>
+    </div>
+    <aside class="proposal-guide" aria-label="Project formats">
+      <p class="proposal-eyebrow">Different skills. Shared curiosity.</p>
+      <dl>
+        <div><dt>TFG</dt><dd>Degree project <span>Build and evaluate a focused prototype.</span></dd></div>
+        <div><dt>TFM</dt><dd>Master’s thesis <span>Investigate a question in greater depth.</span></dd></div>
+        <div><dt>Practice</dt><dd>Start smaller <span>Ask about a course-sized part of an idea.</span></dd></div>
+      </dl>
+    </aside>
+  </header>
+
+  <section id="project-ideas" aria-labelledby="proposal-explorer-title">
+    <div class="proposal-explorer-heading">
+      <div>
+        <h2 id="proposal-explorer-title">Choose your direction</h2>
+        <p>From focused prototypes to research projects, ordered by increasing complexity. Levels are suggested; we’ll agree the scope together.</p>
+      </div>
+      <a href="{{ "contact/" | relURL }}">Discuss an idea <span aria-hidden="true">↗</span></a>
+    </div>
+
+    {{/* All ideas remain readable when JavaScript is unavailable. */}}
+    <form class="proposal-filters" hidden aria-label="Filter project ideas">
+      <div>
+        <label for="proposal-topic">Your interests</label>
+        <select id="proposal-topic" name="topic">
+          <option value="all">All topics</option>
+          {{ range .Params.topics }}<option value="{{ .id }}">{{ .title }}</option>{{ end }}
+        </select>
+      </div>
+      <div>
+        <label for="proposal-level">Project level</label>
+        <select id="proposal-level" name="level">
+          <option value="all">TFG &amp; TFM</option>
+          <option value="TFG">TFG · Degree project</option>
+          <option value="TFM">TFM · Master’s thesis</option>
+        </select>
+      </div>
+      <button type="reset">Reset filters</button>
+      <p class="proposal-results" role="status" aria-live="polite" aria-atomic="true">Showing {{ len .Params.ideas }} ideas</p>
+    </form>
+
+    <p class="proposal-empty" hidden>No ideas match this combination yet. Try another topic or reset the filters.</p>
+
+    {{ range .Params.groups }}
+    {{ $group := . }}
+    <section class="proposal-group" data-group="{{ .id }}" aria-labelledby="group-{{ .id }}">
+      <header class="proposal-group-heading">
+        <span class="proposal-group-number" aria-hidden="true">{{ .number }}</span>
+        <div><h3 id="group-{{ .id }}">{{ .title }}</h3><p>{{ .description }}</p></div>
+      </header>
+      <div class="proposal-grid">
+        {{ range where $.Params.ideas "group" $group.id }}
+        <article class="proposal-card" id="{{ .id }}" data-levels="{{ delimit .levels " " }}" data-topics="{{ delimit .topics " " }}" aria-labelledby="title-{{ .id }}">
+          <div class="proposal-card-meta">
+            <span class="proposal-level">{{ delimit .levels " / " }}</span>
+            {{ with .existing }}<span class="proposal-existing">Existing proposal</span>{{ end }}
+          </div>
+          <p class="proposal-topic">{{ range $index, $topic := .topics }}{{ if $index }} · {{ end }}{{ range where $.Params.topics "id" $topic }}{{ .title }}{{ end }}{{ end }}</p>
+          <h4 id="title-{{ .id }}"><a href="#{{ .id }}">{{ .title }}</a></h4>
+          <p class="proposal-summary">{{ .summary }}</p>
+          <p class="proposal-profile"><strong>Interests</strong> {{ .profile }}</p>
+          <details>
+            <summary>Explore the scope<span class="sr-only">: {{ .title }}</span></summary>
+            <div class="proposal-scope">
+              <p>{{ .scope }}</p>
+              {{ with .note }}<p>{{ . }}</p>{{ end }}
+              {{ with .existing }}<p><a href="{{ . | relURL }}">Read the earlier proposal <span aria-hidden="true">↗</span></a></p>{{ end }}
+              {{ with .resource }}<p><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }} <span aria-hidden="true">↗</span></a></p>{{ end }}
+              <a class="proposal-discuss" href="{{ "contact/" | relURL }}">Let’s discuss this idea <span aria-hidden="true">→</span></a>
+            </div>
+          </details>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </section>
+
+  <aside class="proposal-contact" aria-labelledby="proposal-contact-title">
+    <div>
+      <h2 id="proposal-contact-title">Have a different idea?</h2>
+      <p>Bring your interests and tell us what you’d like to learn. We can discuss a new direction, a follow-up to an existing proposal, or a smaller practice project.</p>
+      <p class="proposal-contact-note">Contact the lab to agree availability, supervision and a realistic scope.</p>
+    </div>
+    <a class="proposal-primary-link" href="{{ "contact/" | relURL }}">Talk to the lab <span aria-hidden="true">→</span></a>
+  </aside>
+</main>
+{{ $script := resources.Get "js/proposals.js" | minify | fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{ end }}
