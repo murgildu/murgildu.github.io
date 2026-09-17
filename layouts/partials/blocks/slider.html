@@ -63,8 +63,30 @@
       {{/* To prevent control overlap, margins are based on $carousel-control-* in bootstrap-variables.scss */}}
       <div class="wg-hero dark container{{with $foreground_img}} slider-foreground-layout{{end}}" style="margin-left: 6rem; margin-right: 6rem; text-align: {{$item.align | default "left"}};">
           {{ with $foreground_img }}
+          {{ $image := . }}
+          {{ $srcset := slice }}
+          {{ if in (slice "jpeg" "png" "webp") .MediaType.SubType }}
+            {{/* Resize each variant from the original, without enlarging small images. */}}
+            {{ range slice 480 768 1200 1600 }}
+              {{ $width := int (math.Min . $foreground_img.Width) }}
+              {{ $variant := $foreground_img.Resize (printf "%dx webp" $width) }}
+              {{ $srcset = $srcset | append (printf "%s %dw" $variant.RelPermalink $variant.Width) }}
+            {{ end }}
+            {{ $srcset = $srcset | uniq }}
+            {{ $image = .Resize (printf "%dx webp" (int (math.Min 1200 .Width))) }}
+          {{ end }}
           <div class="slider-foreground-image-frame">
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="slider-foreground-image" alt="{{ $item.image.alt | default $item.title | plainify }}">
+            <img src="{{ $image.RelPermalink }}"
+              {{ with $srcset }}
+              srcset="{{ delimit . ", " }}"
+              sizes="(min-width: 768px) min(1440px, calc(100vw - 3.5rem)), calc(100vw - 1.25rem)"
+              {{ end }}
+              width="{{ $image.Width }}" height="{{ $image.Height }}"
+              loading="{{ cond (eq $index 0) "eager" "lazy" }}"
+              {{ if eq $index 0 }}fetchpriority="high"{{ end }}
+              decoding="async"
+              class="slider-foreground-image"
+              alt="{{ $item.image.alt | default $item.title | plainify }}">
           </div>
           {{ end }}
 
