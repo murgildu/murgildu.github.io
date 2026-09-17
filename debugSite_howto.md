@@ -97,3 +97,22 @@ To deliberately upgrade Hugo, change `.hugo-version`, install that release,
 and verify a production build and local preview before committing. GitHub
 Actions reads the same version file. Review theme/module updates separately
 and commit any intentional changes to both `go.mod` and `go.sum`.
+
+## Publish through GitHub Pages
+
+The canonical repository is <https://github.com/murgildu/murgildu.github.io>.
+Push reviewed changes to `main`; `.github/workflows/publish.yaml` builds and
+deploys the site. Include `.hugo-version` in the commit when adding or changing
+the version pin. Use `git status` to check for untracked files before committing.
+
+Content is edited in Markdown/YAML under `content/`, either locally or through
+GitHub's file editor. There is no `/admin/` CMS, Netlify login, Netlify build,
+or automatic BibTeX importer. GitHub Pages serves the generated site; contact
+details link directly to email and do not depend on a form service.
+
+Existing clones may still have the former repository address. To use the
+canonical SSH address:
+
+```sh
+git remote set-url origin git@github.com:murgildu/murgildu.github.io.git
+```
