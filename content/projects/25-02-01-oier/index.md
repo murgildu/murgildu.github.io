@@ -4,9 +4,11 @@ summary: Development of a Tower Defense video game prototype to explore the inte
 date: 2025-02-01
 draft: false
 featured: true
-authors: ["unai elordi"]
+authors: ["oier-alumni"]
+links:
+  - name: Project repository
+    url: https://github.com/murgildu/GrAL_2025_OierAlvarez_Integracion_IA_Unity
 image:
-  #filename: "carla_visual_recognition.jpg"  # Replace with actual image file name
   focal_point: "center"
   preview_only: false
 tags:
@@ -50,6 +52,4 @@ To achieve this, a **Tower Defense type video game** has been developed as a pro
 - **Git & GitHub** – Version control  
 
 ---
-
-
 

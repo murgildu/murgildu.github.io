@@ -5,17 +5,22 @@ summary: This project is part of the **Bachelor’s Thesis in Computer Engineeri
 date: 2025-09-21
 draft: false
 featured: true
-authors: ["unai elordi"]
+authors: ["lorena-alumni"]
+links:
+  - name: Project repository
+    url: https://github.com/murgildu/GrAL_2025_LorenaBocos_Accesibilidad_autonomia_aprendizaje_3D
+  - name: 3D models
+    url: https://drive.google.com/file/d/1v5OBTtKRCcz6DovRZ3YLh0b1-Ir5zWlR/view?usp=sharing
 image:
   focal_point: "center"
   preview_only: false
 tags:
-  - Unity
-  - AI
-  - Video Games
-  - Tower Defense
-  - Virtual Reality
-  - Generative AI
+  - 3D Modeling
+  - 3D Printing
+  - Blender
+  - Accessibility
+  - Education
+  - Digital Fabrication
 ---
 **Author:** Lorena Bocos Olabarría  
 **Date:** September 2025  
@@ -71,7 +76,7 @@ Experimental tests determined that the **best configuration** for balancing dura
 ## 🌍 Open Repository
 
 The 3D models designed in this project are available under a **Creative Commons Attribution (CC BY)** license.  
-👉 Access the 3D model repository
+👉 [Download the 3D models](https://drive.google.com/file/d/1v5OBTtKRCcz6DovRZ3YLh0b1-Ir5zWlR/view?usp=sharing)
 
 ## 🧾 Conclusions
 

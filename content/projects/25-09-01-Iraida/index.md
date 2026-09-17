@@ -4,22 +4,22 @@ summary: This project is part of the **Bachelor’s Final Project in Computer En
 date: 2025-09-01
 draft: false
 featured: true
-authors: ["unai elordi"]
+authors: ["iraida-alumni"]
+links:
+  - name: Project repository
+    url: https://github.com/murgildu/GrAL_2025_IraidaAbad_Construccion_bateriasLitio_VR
 image:
-  #filename: "carla_visual_recognition.jpg"  # Replace with actual image file name
   focal_point: "center"
   preview_only: false
 tags:
   - Unity
-  - AI
-  - Video Games
-  - Tower Defense
+  - Blender
   - Virtual Reality
-  - Generative AI
+  - XR Interaction Toolkit
+  - Simulation
+  - Education
 ---
 
-
-# Educational Simulator for Lithium Battery Welding in Virtual Reality 🔋🧰
 
 **Author:** Iraida Abad López  
 **Date:** October 2025  
@@ -94,4 +94,3 @@ The project aims to **promote practical and safe learning**, aligned with the **
 [Full practice demo video (incorrect)](https://drive.google.com/file/d/1k-sNFO1pCRtcw1-H20zH8s8DMCzgR879/view?usp=sharing)
 
 ---
-
