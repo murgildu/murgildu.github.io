@@ -1,7 +1,7 @@
 ---
 title: Educational Simulator for Lithium Battery Welding in Virtual Reality 🎮
 summary: This project is part of the **Bachelor’s Final Project in Computer Engineering**, and its goal is to **develop an educational virtual reality (VR) application** that simulates the process of **assembling and welding a 10s4p lithium battery pack**.
-date: 2025-09-01
+date: 2025-10-01
 draft: false
 featured: true
 authors: ["iraida-alumni"]
