@@ -28,6 +28,21 @@ sections:
   - block: slider
     content:
       slides:
+      - title: Your next XR project starts here
+        image:
+          filename: murgildu-welcome-2026.png
+          alt: Opening slide of the MURGILDU 2026–2027 presentation, featuring the lab, VR equipment and team
+        content: |
+          Explore MURGILDU’s <b>2026–2027</b> projects in XR, healthcare and 3D space optimisation.<br>
+          Meet the team, find your next challenge and <a class="text-white" href="https://meet.google.com/daf-tvgj-bje" target="_blank" rel="noopener"><u>join the talk on Google Meet</u></a>.
+        align: center
+        background:
+          color: '#102535'
+        link:
+          icon: file-pdf
+          icon_pack: fas
+          text: See the 2026–2027 slides (PDF)
+          url: /files/murgildu-welcome-2026.pdf
       - title: Inside the lab
         image:
           filename: headset.JPG
