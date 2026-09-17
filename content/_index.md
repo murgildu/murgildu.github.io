@@ -11,11 +11,8 @@ sections:
   - block: hero
     id: welcome
     content:
-      title: MURGILDU 3D Lab
       text: |
-        A creative and educational space at the **University of the Basque Country (EHU)**.
-
-        Explore 3D graphics, VR and AR, game development, and digital fabrication through student projects and hands-on learning.
+        Explore 3D graphics, VR and AR, game development, and digital fabrication at the **University of the Basque Country (EHU)** through student projects and hands-on learning.
       cta:
         label: Explore student projects
         url: '#selected-projects'
@@ -26,7 +23,7 @@ sections:
         label: Open to students from all disciplines and experience levels.
     design:
       spacing:
-        padding: ['48px', '0', '48px', '0']
+        padding: ['24px', '0', '20px', '0']
 
   - block: slider
     content:
@@ -92,9 +89,9 @@ sections:
           text: Join our Discord
           url: https://discord.gg/wqEvEaegyv
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      # Let slides fit their content and use the page's scrollbar.
       slide_height: ''
-      is_fullscreen: true
+      is_fullscreen: false
       # Automatically transition through slides?
       loop: false
       # Duration of transition between slides (in ms)
@@ -117,7 +114,7 @@ sections:
       view: compact
       columns: '2'
       spacing:
-        padding: ['64px', '0', '64px', '0']
+        padding: ['40px', '0', '40px', '0']
 
   - block: markdown
     id: join-lab
@@ -132,5 +129,5 @@ sections:
     design:
       columns: '1'
       spacing:
-        padding: ['64px', '0', '64px', '0']
+        padding: ['40px', '0', '40px', '0']
 ---

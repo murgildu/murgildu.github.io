@@ -51,7 +51,7 @@
     {{ end }}
 
   <div class="carousel-item{{if eq $index 0}} active{{end}} {{with $block.design.is_fullscreen}}fullscreen{{end}}" style="{{$style_bg | safeCSS}}">
-    <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center{{with $foreground_img}} slider-foreground-shell{{end}}" style="{{$style_filter | safeCSS}}">
+    <div class="d-flex w-100 justify-content-center align-items-center{{if $foreground_img}} slider-foreground-shell{{else}} position-absolute h-100{{end}}" style="{{$style_filter | safeCSS}}">
       {{/* To prevent control overlap, margins are based on $carousel-control-* in bootstrap-variables.scss */}}
       <div class="wg-hero dark container{{with $foreground_img}} slider-foreground-layout{{end}}" style="margin-left: 6rem; margin-right: 6rem; text-align: {{$item.align | default "left"}};">
           {{ with $foreground_img }}
@@ -98,8 +98,8 @@
             {{ if in (slice "fab" "fas" "far" "fal") $pack }}
               {{ $pack_prefix = "fa" }}
             {{ end }}
-            <p>
-              <a href="{{ $item.link.url }}" class="btn btn-light btn-lg mt-3">
+            <p class="slider-foreground-cta">
+              <a href="{{ $item.link.url }}" class="btn btn-light btn-lg">
                 {{- with $item.link.icon -}}<i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}" style="padding-right: 10px;"></i>{{- end -}}
                 {{- $item.link.text | emojify | markdownify | safeHTML -}}
               </a>
