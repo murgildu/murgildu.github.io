@@ -34,7 +34,8 @@ sections:
           alt: Opening slide of the MURGILDU 2026–2027 presentation, featuring the lab, VR equipment and team
         content: |
           Explore MURGILDU’s <b>2026–2027</b> projects in XR, healthcare and 3D space optimisation.<br>
-          Meet the team, find your next challenge and <a class="text-white" href="https://meet.google.com/daf-tvgj-bje" target="_blank" rel="noopener"><u>join the talk on Google Meet</u></a>.
+          <b>Monday 21 September 2026 · 13:30 (CEST)</b><br>
+          Join us in <b>Lab E08</b> or <a class="text-white" href="https://meet.google.com/daf-tvgj-bje" target="_blank" rel="noopener"><u>online via Google Meet</u></a>.
         align: center
         background:
           color: '#102535'
