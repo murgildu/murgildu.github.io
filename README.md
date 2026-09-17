@@ -38,4 +38,12 @@ We’re just getting started! This site will grow with resources, guides, and sh
 
 ---
 
+## Local development
+
+Follow the [setup and build guide](debugSite_howto.md) to install the pinned
+Hugo Extended release, preview changes, and verify a production build.
+After setup, start the site with `./scripts/hugo.sh server --disableFastRender`.
+
+---
+
 Made with 💡 by the **EHU 3D Graphics Lab** team.

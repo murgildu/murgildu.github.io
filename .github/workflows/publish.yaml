@@ -1,7 +1,6 @@
 name: Deploy website to GitHub Pages
 
 env:
-  WC_HUGO_VERSION: '0.152.0'
   HUGO_CACHEDIR: /tmp/hugo_cache_runner
 
 on:
@@ -32,17 +31,20 @@ jobs:
         with:
           # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
+      - name: Read Hugo version
+        id: hugo-version
+        run: echo "version=$(cat .hugo-version)" >> "$GITHUB_OUTPUT"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ env.WC_HUGO_VERSION }}
+          hugo-version: ${{ steps.hugo-version.outputs.version }}
           extended: true
       - uses: actions/cache@v4
         with:
           path: ${{ env.HUGO_CACHEDIR }}
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod', '**/go.sum') }}
+          key: ${{ runner.os }}-hugomod-${{ steps.hugo-version.outputs.version }}-${{ hashFiles('go.mod', 'go.sum') }}
           restore-keys: |
-            ${{ runner.os }}-hugomod-
+            ${{ runner.os }}-hugomod-${{ steps.hugo-version.outputs.version }}-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -51,8 +53,8 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          ./scripts/hugo.sh version
+          ./scripts/hugo.sh --environment production --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

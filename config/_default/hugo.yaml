@@ -20,6 +20,8 @@ removePathAccents: true
 ############################
 
 enableGitInfo: false
+# Resolve the versions in go.mod even when an old local _vendor directory exists.
+ignoreVendorPaths: '**'
 summaryLength: 30
 pagination:
   pagerSize: 10
