@@ -34,7 +34,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:unai.elordi@ehu.es'
+    link: 'mailto:unai.elordi@ehu.eus'
   - icon: google-scholar
     icon_pack: ai
     link: 'https://scholar.google.es/citations?user=f8WBAnsAAAAJ&hl=en'
@@ -46,8 +46,8 @@ social:
     link: 'https://github.com/uelordi01'
 
   - icon: linkedin
-    icon_pack: brands
-    link: 'https://github.com/uelordi01'
+    icon_pack: fab
+    link: 'https://www.linkedin.com/in/unai-elordi-hidalgo-ph-d-65439654'
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv

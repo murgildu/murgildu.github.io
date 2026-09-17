@@ -10,10 +10,22 @@ sections:
     content:
       title: Contact
       text: |-
-        If you are interesed collaborating with us just write us:  📩
-      email: inigo.lopez@ehu.eus, unai.elordi@ehu.eus, andoni.mujika@ehu.eus
+        Interested in joining the lab or collaborating with us? Email one of the coordinators below. 📩
+      contact_links:
+        - icon: envelope
+          icon_pack: fas
+          name: 'Email Inigo Lopez-Gazpio'
+          link: 'mailto:inigo.lopez@ehu.eus'
+        - icon: envelope
+          icon_pack: fas
+          name: 'Email Unai Elordi'
+          link: 'mailto:unai.elordi@ehu.eus'
+        - icon: envelope
+          icon_pack: fas
+          name: 'Email Andoni Mujika'
+          link: 'mailto:andoni.mujika@ehu.eus'
       address:
-        street: Manuel Lardizabal pasealekua, 1, 20018.
+        street: Manuel Lardizabal pasealekua, 1
         city: Donostia-San Sebastian
         region: Gipuzkoa
         postcode: '20018'
@@ -22,12 +34,7 @@ sections:
       coordinates:
         latitude: '43.3060928'
         longitude: '-2.0110165'
-      directions: You can find us in the Computer Science forum E08 laboratory
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
+      directions: Find us in Lab E08 at the Faculty of Informatics.
 
       # Automatically link email and phone or display as text?
       autolink: true

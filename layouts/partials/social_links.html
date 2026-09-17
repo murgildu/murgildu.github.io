@@ -1,0 +1,31 @@
+{{/* Hugo Blox social links override: expose named links to assistive technology. */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+{{ $name := .Title }}
+{{ $icon_class := "" }}
+{{ if reflect.IsMap . }}
+  {{ $icon_class = .icon_class | default "" }}
+{{ end }}
+{{ $labels := dict "envelope" "Email" "google-scholar" "Google Scholar" "github" "GitHub" "linkedin" "LinkedIn" "orcid" "ORCID" "university" "University profile" }}
+<ul class="network-icon">
+  {{ range .Params.social }}
+    {{ $pack := or .icon_pack "fas" }}
+    {{ $pack_prefix := $pack }}
+    {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+      {{ $pack_prefix = "fa" }}
+    {{ end }}
+    {{ $link := .link }}
+    {{ $scheme := (urls.Parse $link).Scheme }}
+    {{ $target := "" }}
+    {{ if not $scheme }}
+      {{ $link = .link | relLangURL }}
+    {{ else if in (slice "http" "https") $scheme }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+    {{ end }}
+    {{ $label := .label | default (index $labels .icon) | default (.icon | humanize) }}
+    <li>
+      <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ $label }} — {{ $name }}" title="{{ $label }}">
+        <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}{{ with $icon_class }} {{ . }}{{ end }}" aria-hidden="true"></i>
+      </a>
+    </li>
+  {{ end }}
+</ul>

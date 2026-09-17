@@ -38,9 +38,10 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:elsa.fernandez@ehu.eus'
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.com/citations?user=elsa-fernandez
+  - icon: university
+    icon_pack: fas
+    label: EHU staff profile
+    link: https://www.ehu.eus/es/web/graduak/grado-ingenieria-informatica/profesorado?idPdi=69719&redirect=fichaPDI
   - icon: github
     icon_pack: fab
     link: https://github.com/elsafernandez
@@ -61,5 +62,4 @@ highlight_name: false
 user_groups:
   - Class Coordinators
 ---
-
 

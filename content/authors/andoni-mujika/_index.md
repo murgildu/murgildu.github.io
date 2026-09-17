@@ -40,7 +40,7 @@ social:
     link: 'mailto:andoni.mujika@ehu.eus'
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=andoni-mujika
+    link: https://scholar.google.com/citations?user=PK8JNBwAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/amujika
@@ -58,5 +58,4 @@ email: ''
 user_groups:
   - Class Coordinators
 ---
-
 
