@@ -8,15 +8,7 @@
 {{ $hash_id := .wcIdentifier }}
 {{ $slide_count := len $block.content.slides }}
 
-<!-- Indicators -->
-{{ if gt $slide_count 1 }}
-<ol class="carousel-indicators">
-  {{ range $index, $item := $block.content.slides }}
-  <li data-target="#{{$hash_id}}" data-slide-to="{{$index}}" {{if eq $index 0}}class="active"{{end}}></li>
-  {{ end }}
-</ol>
-{{ end }}
-
+<div class="slider-stage{{if gt $slide_count 1}} slider-stage-with-indicators{{end}}">
 <!-- Carousel slides wrapper -->
 <div class="carousel-inner">
   {{ range $index, $item := $block.content.slides }}
@@ -129,6 +121,16 @@
   <span class="carousel-control-next-icon"></span>
   <span class="sr-only">Next</span>
 </a>
+{{ end }}
+</div>
+
+<!-- Keep indicators outside the slide's scrolling area. -->
+{{ if gt $slide_count 1 }}
+<ol class="carousel-indicators">
+  {{ range $index, $item := $block.content.slides }}
+  <li data-target="#{{$hash_id}}" data-slide-to="{{$index}}" {{if eq $index 0}}class="active"{{end}}></li>
+  {{ end }}
+</ol>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {

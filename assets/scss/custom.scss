@@ -15,8 +15,38 @@
   width: auto;
 }
 
+.wg-slider {
+  --slider-indicators-height: 3rem;
+}
+
+.wg-slider .slider-stage {
+  position: relative;
+}
+
+// Reserve a separate row for slide selectors, including in fullscreen mode.
+.wg-slider .carousel-indicators {
+  align-items: center;
+  background: #222;
+  margin: 0;
+  min-height: var(--slider-indicators-height);
+  padding: 0.25rem 0.75rem;
+  position: static;
+}
+
+.wg-slider .slider-stage-with-indicators .carousel-item.fullscreen {
+  min-height: calc(100vh - 70px - var(--slider-indicators-height));
+  min-height: calc(100dvh - 70px - var(--slider-indicators-height));
+}
+
+@media (max-width: 991.98px) {
+  .wg-slider .slider-stage-with-indicators .carousel-item.fullscreen {
+    min-height: calc(100vh - 50px - var(--slider-indicators-height));
+    min-height: calc(100dvh - 50px - var(--slider-indicators-height));
+  }
+}
+
 .wg-slider .slider-foreground-shell {
-  align-items: center !important;
+  align-items: flex-start !important;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 4.75rem clamp(0.75rem, 2vw, 2rem) 2.75rem;
@@ -28,9 +58,11 @@
   flex-direction: column;
   gap: clamp(0.45rem, 1.2vh, 0.85rem);
   justify-content: center;
+  // Center short slides; let tall slides scroll from their top edge.
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto !important;
   margin-right: auto !important;
-  max-height: calc(100svh - 7.5rem);
   max-width: 1440px;
   min-height: 0;
   overflow: visible;
@@ -96,7 +128,6 @@
 
   .wg-slider .slider-foreground-layout {
     gap: 0.55rem;
-    max-height: calc(100svh - 6.5rem);
     max-width: 100%;
     width: calc(100vw - 1.25rem);
   }
@@ -122,19 +153,11 @@
 }
 
 @supports (height: 100dvh) {
-  .wg-slider .slider-foreground-layout {
-    max-height: calc(100dvh - 7.5rem);
-  }
-
   .wg-slider .slider-foreground-image-frame {
     height: 48dvh;
   }
 
   @media (max-width: 767.98px) {
-    .wg-slider .slider-foreground-layout {
-      max-height: calc(100dvh - 6.5rem);
-    }
-
     .wg-slider .slider-foreground-image-frame {
       height: 34dvh;
     }
@@ -169,7 +192,6 @@
 
   .wg-slider .slider-foreground-layout {
     gap: 0.45rem;
-    max-height: calc(100svh - 5.25rem);
   }
 
   .wg-slider .slider-foreground-image-frame {
@@ -193,10 +215,6 @@
 
 @supports (height: 100dvh) {
   @media (max-width: 991.98px) and (orientation: landscape) {
-    .wg-slider .slider-foreground-layout {
-      max-height: calc(100dvh - 5.25rem);
-    }
-
     .wg-slider .slider-foreground-image-frame {
       height: 30dvh;
     }
