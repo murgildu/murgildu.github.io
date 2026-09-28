@@ -31,6 +31,21 @@ sections:
   - block: slider
     content:
       slides:
+      - title: We joined the Godot XR Game Jam 2026
+        image:
+          filename: murgildu-godot-xr-jam-2026.png
+          alt: 'MURGILDU at the Godot XR Game Jam 2026: Classroom Escape Room, led by Urko Mungia, with a game screenshot and his portrait'
+        content: |
+          Discover <b>Classroom Escape Room</b>, an educational VR prototype led by <b>Urko Mungia</b>.<br>
+          Explore the project, source code and gameplay.
+        align: center
+        background:
+          color: '#102535'
+        link:
+          icon: gamepad
+          icon_pack: fas
+          text: Discover Classroom Escape Room
+          url: /projects/26-09-28-classroom-escape-room/
       - title: Your next XR project starts here
         image:
           filename: murgildu-welcome-2026.png
