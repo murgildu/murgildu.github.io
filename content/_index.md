@@ -16,6 +16,9 @@ sections:
       cta:
         label: Explore student projects
         url: '#selected-projects'
+      cta_secondary:
+        label: Explore GitHub projects
+        url: https://github.com/murgildu
       cta_alt:
         label: Join the lab
         url: '#join-lab'
