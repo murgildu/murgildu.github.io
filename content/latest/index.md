@@ -8,11 +8,11 @@ sections:
   - block: hero
     content:
       title: |
-        EHU 3D Graphics Lab
+        MURGILDU
       image:
         filename: dinosaur.JPG
       text: |
-        The **EHU 3D Graphics Lab** is a creative and educational space designed to provide students with hands-on experience in cutting-edge 3D technologies.
+        **MURGILDU**, the 3D and XR laboratory at EHU, gives students hands-on experience in virtual reality, game development, and 3D technologies.
   - block: collection
     content:
       title: Latest Projects
