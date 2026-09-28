@@ -15,7 +15,7 @@ sections:
         Explore 3D graphics, VR and AR, game development, and digital fabrication at the **University of the Basque Country (EHU)** through student projects and hands-on learning.
       cta:
         label: Explore student projects
-        url: '#selected-projects'
+        url: /projects/
       cta_secondary:
         label: Explore GitHub projects
         url: https://github.com/murgildu
@@ -130,25 +130,6 @@ sections:
       loop: false
       # Duration of transition between slides (in ms)
       interval: 2000
-
-  - block: collection
-    id: selected-projects
-    content:
-      title: Selected student projects
-      page_type: projects
-      count: 3
-      order: desc
-      filters:
-        featured_only: true
-      archive:
-        enable: true
-        text: View all projects
-        link: /projects/
-    design:
-      view: compact
-      columns: '2'
-      spacing:
-        padding: ['40px', '0', '40px', '0']
 
   - block: markdown
     id: join-lab
