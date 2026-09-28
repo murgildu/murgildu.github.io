@@ -2,7 +2,7 @@
 title: Latest
 date: 2022-10-24
 type: landing
-summary: Latest projects and proposals from MURGILDU 3D Laboratory, the 3D graphics laboratory at the University of the Basque Country (EHU).
+summary: Latest student and laboratory projects from MURGILDU, the 3D and XR laboratory at the University of the Basque Country (EHU).
 
 sections:
   - block: hero
@@ -31,25 +31,6 @@ sections:
     design:
       view: card
       columns: '1'
-  - block: collection
-    content:
-      title: Proposals
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: proposals
-    design:
-      view: card
-      columns: '1'
-
   - block: markdown
     content:
       title:
